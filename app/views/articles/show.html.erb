@@ -1,0 +1,7 @@
+<h2><%= @article.title.capitalize %></h2>
+<p><%= @article.content %></p>
+
+<%= link_to "Delete article", article_path(@article), method: :delete, data: { confirm: "Are you sure you wish to delete the article #{@article.title}?" } %>
+<p class= "link"><%= link_to "Main Manu", articles_path %></p>
+<p class= "link"><%= link_to "Edit Article", edit_article_path %></p>
+
